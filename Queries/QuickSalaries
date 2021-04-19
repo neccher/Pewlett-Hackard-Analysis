@@ -1,0 +1,17 @@
+select emp.emp_no
+	, emp.first_name
+	, emp.last_name
+	, dep.dept_name
+	, salaries.salary
+	, titles.title
+from employees emp
+inner join dept_emp
+	on dept_emp.emp_no = emp.emp_no
+inner join departments dep
+	on dep.dept_no = dept_emp.dept_no
+inner join salaries
+	on salaries.emp_no = emp.emp_no
+inner join titles
+	on titles.emp_no = emp.emp_no
+	
+order by salary desc
