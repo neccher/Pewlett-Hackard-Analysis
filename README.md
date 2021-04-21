@@ -35,7 +35,7 @@ There are a few takeaways that Pewlett_Hackard should be aware of and try to act
 - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 	- By looking at the count of emp_no in the unique_titles table, we see that 90,398 positions will need to be filled.
 
-- Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+- Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett-Hackard employees?
 	- There aren't enough retirement-ready employees to mentor every single replacement.  However, if broken up into even smaller groups within the department and each manager is in charge of mentoring a single group, I believe PH could make the mentorship program a valuable experience.
 
 - Additional queries:
