@@ -27,13 +27,16 @@ There are a few takeaways that Pewlett_Hackard should be aware of and try to act
   
   As you can see, most of the exodus from Pewlett-Hackard will be coming from three departments and should be prioritized in finding new employees to take over the work. 
 
-- Development, Production, and Sales also have the highest number of employees eligible for the mentorship program
-  - Luckily, if PH can find replacements quickly, they will have plenty of mentors to make the transition for these hardest hit departments as smooth as possible.
+- Development, Production, and Sales also have the highest number of employees eligible for the mentorship program but nowhere near enough to mentor a replacement for each retiree.
+  - There is a siginificant gap between the number of retirees retiring in each department and the number of retirees who are also eligible to become a mentor in each department.
   (Count of emp_no in mentorship_eligibility table Grouped by Title) ![image](https://user-images.githubusercontent.com/79211628/115588103-02287f00-a294-11eb-8eff-97b39909d585.png)
 
 ## Summary
 - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+	- By looking at the count of emp_no in the unique_titles table, we see that 90,398 positions will need to be filled.
+	- 
 - Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+	- 
 - Additional queries:
   - Unfortunately for Pewlett-Hackard, they will be in dire need of leadership after the "silver tsunami."  Every single one of their departments with a manager is managed by an employee expected to retire soon.  By writing a query to look at information in the manager_info table and connecting the retirement_info table using `INNER JOIN`, the results set will only display managers who are also of retirement age.
   ```
