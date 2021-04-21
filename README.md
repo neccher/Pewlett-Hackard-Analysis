@@ -12,7 +12,7 @@ There are a few takeaways that Pewlett_Hackard should be aware of and try to act
   - There are 90,398 current employees retiring soon.  Of those ~90K, 57,668 of have Senior in their Title.
   (retiring_titles table) ![image](https://user-images.githubusercontent.com/79211628/115584681-9395f200-a290-11eb-9831-024f355bc3f4.png)
   
-  Pewlett-Hackard must start looking internally or externally for qualified candidates to fill these senior positions.
+  	Pewlett-Hackard must start looking internally or externally for qualified candidates to fill these senior positions.
 
 - Mentorship Eligibility has a larger representation of Senior level employees
   - Luckily, the representation of mentorship eligible employees also skews heavy towards Senior level employees.
@@ -20,12 +20,12 @@ There are a few takeaways that Pewlett_Hackard should be aware of and try to act
   
   ![image](https://user-images.githubusercontent.com/79211628/115585999-c096d480-a291-11eb-8d4b-8f2cd6fe61a3.png)
 
-  PH should recruit employees to figure out replacements for these Senior level positions earlier rather than later in order to take advantage of the mentorship program before the Boomers leave.
+  	PH should recruit employees to figure out replacements for these Senior level positions earlier rather than later in order to take advantage of the mentorship program before the Boomers leave.
 
 - Development, Production, and Sales are the hardest hit departments
   - PH cannot only focus on replacing leadership.  It is also important to look at which departments will see the largest out flows of workers. (Retiring Workers Grouped by Department) ![image](https://user-images.githubusercontent.com/79211628/115587298-25066380-a293-11eb-9be7-47a3092479be.png)
-  
-  As you can see, most of the exodus from Pewlett-Hackard will be coming from three departments and should be prioritized in finding new employees to take over the work. 
+	
+	As you can see, most of the exodus from Pewlett-Hackard will be coming from three departments and should be prioritized in finding new employees to take over the work. 
 
 - Development, Production, and Sales also have the highest number of employees eligible for the mentorship program.
   - In order to take advantage of this mentorship program, PH should split the departments into smaller teams and have one mentor in charge of a single team.
