@@ -30,3 +30,19 @@ There are a few takeaways that Pewlett_Hackard should be aware of and try to act
 - Development, Production, and Sales also have the highest number of employees eligible for the mentorship program
   - Luckily, if PH can find replacements quickly, they will have plenty of mentors to make the transition for these hardest hit departments as smooth as possible.
   (Count of emp_no in mentorship_eligibility table Grouped by Title) ![image](https://user-images.githubusercontent.com/79211628/115588103-02287f00-a294-11eb-8eff-97b39909d585.png)
+
+## Summary
+- How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+- Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+- Additional queries:
+  - Unfortunately for Pewlett-Hackard, they will be in dire need of leadership after the "silver tsunami."  Every single one of their departments with a manager is managed by an employee expected to retire soon.  By writing a query to look at information in the manager_info table and connecting the retirement_info table using `INNER JOIN`, the results set will only display managers who are also of retirment age.
+  ```
+  SELECT mi.dept_no
+	, mi.dept_name
+	, ri.emp_no
+	, ri.first_name
+	, ri.last_name
+  FROM manager_info mi
+  INNER JOIN retirement_info ri
+	  ON mi.emp_no = ri.emp_no 
+  ```
