@@ -53,53 +53,53 @@ There are a few takeaways that Pewlett_Hackard should be aware of and try to act
   The output confirms that every current manager is in the cohort retiring soon.
   
   - Even worse news for Pewlett-Hackard is that the retiring employees have a lower average salary ($52,909.00) than their non-retiring counterparts ($52,997.00), despite their level of seniority and management positions.  This means that they should expect to have to pay the replacements of these soon to be retirees more than what the current position is requiring.
-```
--- Create Unique Retiring Salaries Table
-SELECT DISTINCT ON (rt.emp_no) rt.emp_no
-	, rt.first_name
-	, rt.last_name
-	, s.salary
-INTO unique_retirement_salaries
-FROM salaries s
-INNER JOIN retirement_titles rt
-	ON s.emp_no = rt.emp_no
-ORDER BY rt.emp_no, s.to_date DESC
+	```
+	-- Create Unique Retiring Salaries Table
+	SELECT DISTINCT ON (rt.emp_no) rt.emp_no
+		, rt.first_name
+		, rt.last_name
+		, s.salary
+	INTO unique_retirement_salaries
+	FROM salaries s
+	INNER JOIN retirement_titles rt
+		ON s.emp_no = rt.emp_no
+	ORDER BY rt.emp_no, s.to_date DESC
 
--- Create Unique NonRetiring Salaries Table
-SELECT DISTINCT ON (e.emp_no) e.emp_no
-	, e.first_name
-	, e.last_name
-	, s.salary
-INTO unique_non_retirement_salaries
-FROM salaries s
-INNER JOIN employees e
-	ON s.emp_no = e.emp_no
-LEFT JOIN retirement_titles rt
-	ON s.emp_no = rt.emp_no
-WHERE rt.emp_no is null
-ORDER BY e.emp_no, s.to_date DESC
+	-- Create Unique NonRetiring Salaries Table
+	SELECT DISTINCT ON (e.emp_no) e.emp_no
+		, e.first_name
+		, e.last_name
+		, s.salary
+	INTO unique_non_retirement_salaries
+	FROM salaries s
+	INNER JOIN employees e
+		ON s.emp_no = e.emp_no
+	LEFT JOIN retirement_titles rt
+		ON s.emp_no = rt.emp_no
+	WHERE rt.emp_no is null
+	ORDER BY e.emp_no, s.to_date DESC
 
--- Sum of Retiring Salaries
-SELECT SUM(salary)
-FROM unique_retirement_salaries
+	-- Sum of Retiring Salaries
+	SELECT SUM(salary)
+	FROM unique_retirement_salaries
 
--- Sum of NonRetiring Salaries
-SELECT SUM(salary)
-FROM unique_non_retirement_salaries
+	-- Sum of NonRetiring Salaries
+	SELECT SUM(salary)
+	FROM unique_non_retirement_salaries
 
--- Count of Retiring employees
-SELECT COUNT(emp_no)
-FROM unique_retirement_salaries
+	-- Count of Retiring employees
+	SELECT COUNT(emp_no)
+	FROM unique_retirement_salaries
 
--- Count of NonRetiring employees
-SELECT COUNT(emp_no)
-FROM unique_non_retirement_salaries
+	-- Count of NonRetiring employees
+	SELECT COUNT(emp_no)
+	FROM unique_non_retirement_salaries
 
---Average of Retirement Salaries 
-SELECT (SUM(salary)/COUNT(emp_no)) AS AverageSalary
-FROM unique_retirement_salaries
+	--Average of Retirement Salaries 
+	SELECT (SUM(salary)/COUNT(emp_no)) AS AverageSalary
+	FROM unique_retirement_salaries
 
---Average of NonRetirement Salaries 
-SELECT (SUM(salary)/COUNT(emp_no)) AS AverageSalary
-FROM unique_non_retirement_salaries
-```
+	--Average of NonRetirement Salaries 
+	SELECT (SUM(salary)/COUNT(emp_no)) AS AverageSalary
+	FROM unique_non_retirement_salaries
+	```
