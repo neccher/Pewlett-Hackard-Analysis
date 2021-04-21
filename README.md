@@ -26,3 +26,7 @@ There are a few takeaways that Pewlett_Hackard should be aware of and try to act
   - PH cannot only focus on replacing leadership.  It is also important to look at which departments will see the largest out flows of workers. (Retiring Workers Grouped by Department) ![image](https://user-images.githubusercontent.com/79211628/115587298-25066380-a293-11eb-9be7-47a3092479be.png)
   
   As you can see, most of the exodus from Pewlett-Hackard will be coming from three departments and should be prioritized in finding new employees to take over the work. 
+
+- Development, Production, and Sales also have the highest number of employees eligible for the mentorship program
+  - Luckily, if PH can find replacements quickly, they will have plenty of mentors to make the transition for these hardest hit departments as smooth as possible.
+  (Count of emp_no in mentorship_eligibility table Grouped by Title) ![image](https://user-images.githubusercontent.com/79211628/115588103-02287f00-a294-11eb-8eff-97b39909d585.png)
