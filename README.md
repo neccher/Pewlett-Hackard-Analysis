@@ -13,3 +13,11 @@ There are a few takeaways that Pewlett_Hackard should be aware of and try to act
   (retiring_titles table) ![image](https://user-images.githubusercontent.com/79211628/115584681-9395f200-a290-11eb-9831-024f355bc3f4.png)
   
   Pewlett-Hackard must start looking internally or externally for qualified candidates to fill these senior positions.
+
+- Mentorship Eligibility has a larger representation of Senior level employees
+  - Luckily, the representation of mentorship eligible employees also skews heavy towards Senior level employees.
+  (Count of emp_no in mentorship_eligibility table Grouped by Title) 
+  
+  ![image](https://user-images.githubusercontent.com/79211628/115585999-c096d480-a291-11eb-8d4b-8f2cd6fe61a3.png)
+
+  PH should recruit employees to figure out replacements for these Senior level positions earlier rather than later in order to take advantage of the mentorship program before the Boomers leave.
